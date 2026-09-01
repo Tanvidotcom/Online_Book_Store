@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bookify by Tanvi Nanaware | Online Book Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">📚</span>
+                <span>Bookify by Tanvi Nanaware</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+
+            <nav id="navMenu">
+
+    <a href="index.html" class="active">
+        Home
+    </a>
+
+    <a href="catalogue.html">
+        Catalogue
+    </a>
+
+    <!-- Guest navigation -->
+    <div id="guestLinks" class="nav-auth">
+
+        <a href="login.html">
+            Login
+        </a>
+
+        <a href="register.html" class="register-btn">
+            Register
+        </a>
+
+    </div>
+
+
+    <!-- Logged-in user navigation -->
+    <div id="userLinks" class="user-menu" style="display: none;">
+
+        <button
+            id="profileButton"
+            class="profile-button"
+            type="button">
+
+            <span class="profile-icon">
+                👤
+            </span>
+
+            <span id="navUserName">
+                User
+            </span>
+
+            <span class="dropdown-arrow">
+                ▾
+            </span>
+
+        </button>
+
+
+        <div
+            id="profileDropdown"
+            class="profile-dropdown">
+
+            <div class="profile-header">
+
+                <div class="profile-avatar">
+                    👤
+                </div>
+
+                <div>
+
+                    <strong id="profileName">
+                        User
+                    </strong>
+
+                    <small id="profileEmail">
+                        email@example.com
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <hr>
+
+
+            <a href="profile.html">
+                👤 My Profile
+            </a>
+
+            <a href="cart.html">
+                🛒 My Cart
+            </a>
+
+
+            <button
+                id="logoutButton"
+                class="logout-button"
+                type="button">
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </div>
+
+</nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    ✨ YOUR NEXT STORY STARTS HERE
+                </div>
+
+                <h1>
+                    Discover Books
+                    <span>You'll Love</span>
+                </h1>
+
+                <p class="hero-description">
+                    Explore a carefully selected collection of books,
+                    discover new authors and find your next favourite read.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="catalogue.html" class="primary-btn">
+                        Explore Catalogue
+                        <span>→</span>
+                    </a>
+
+                    <a href="#featured" class="secondary-btn">
+                        Featured Books
+                    </a>
+
+                </div>
+
+                <div class="hero-trust">
+
+                    <div>
+                        <strong>100+</strong>
+                        <span>Books</span>
+                    </div>
+
+                    <div>
+                        <strong>50+</strong>
+                        <span>Authors</span>
+                    </div>
+
+                    <div>
+                        <strong>10+</strong>
+                        <span>Categories</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Decorative book illustration -->
+
+            <div class="hero-visual">
+
+                <div class="floating-book book-one">
+                    📕
+                </div>
+
+                <div class="floating-book main-book">
+                    📖
+                </div>
+
+                <div class="floating-book book-two">
+                    📗
+                </div>
+
+                <div class="floating-circle circle-one"></div>
+                <div class="floating-circle circle-two"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="features-section">
+
+            <div class="section-title">
+
+                <span>WHY BOOKIFY?</span>
+
+                <h2>
+                    Everything You Need
+                    <br>
+                    for Your Reading Journey
+                </h2>
+
+            </div>
+
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📚
+                    </div>
+
+                    <h3>Wide Collection</h3>
+
+                    <p>
+                        Explore books across fiction, technology,
+                        business, education and more.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🔍
+                    </div>
+
+                    <h3>Easy Discovery</h3>
+
+                    <p>
+                        Quickly find books using our simple
+                        catalogue and search features.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🔐
+                    </div>
+
+                    <h3>Secure Accounts</h3>
+
+                    <p>
+                        Your account information and passwords
+                        are protected using secure practices.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📱
+                    </div>
+
+                    <h3>Responsive Design</h3>
+
+                    <p>
+                        Enjoy a smooth experience on desktops,
+                        tablets and mobile devices.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURED BOOKS ================= -->
+
+        <section class="featured-section" id="featured">
+
+            <div class="section-heading-row">
+
+                <div class="section-title left">
+
+                    <span>OUR COLLECTION</span>
+
+                    <h2>
+                        Featured Books
+                    </h2>
+
+                </div>
+
+                <a href="catalogue.html" class="view-all">
+                    View All Books →
+                </a>
+
+            </div>
+
+
+            <div id="featuredBooks" class="book-grid">
+
+                <!-- Books will be loaded from MySQL -->
+
+                <div class="loading">
+                    <div class="loader"></div>
+                    <p>Loading books...</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta-section">
+
+            <div class="cta-content">
+
+                <span>READY TO START READING?</span>
+
+                <h2>
+                    Find a Book That
+                    <br>
+                    Speaks to You.
+                </h2>
+
+                <p>
+                    Browse our catalogue and discover
+                    your next great read.
+                </p>
+
+                <a href="catalogue.html" class="primary-btn">
+                    Browse Catalogue →
+                </a>
+
+            </div>
+
+            <div class="cta-decoration">
+                📖
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    Bookify by Tanvi Nanaware
+                </div>
+
+                <p>
+                    Your online destination for discovering
+                    books and exploring new ideas.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+                <a href="catalogue.html">Catalogue</a>
+                <a href="cart.html">🛒 Cart</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Categories</h4>
+
+                <a href="catalogue.html">Fiction</a>
+                <a href="catalogue.html">Technology</a>
+                <a href="catalogue.html">Business</a>
+                <a href="catalogue.html">Education</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Bookify. All Rights Reserved.| By Tanvi Nanaware |  Roll No 44
+                
+            </p>
+
+            <p>
+                Online Book Store
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

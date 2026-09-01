@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Bookify by Tanvi Nanaware | Login</title>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                📚 Bookify by Tanvi Nanaware
+            </a>
+
+            <nav>
+                <a href="index.html">Home</a>
+
+                <a href="catalogue.html">
+                    Catalogue
+                </a>
+                <a href="cart.html">
+    🛒 Cart
+</a>
+
+                <a href="login.html" class="active">
+                    Login
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= LOGIN PAGE ================= -->
+
+    <main class="login-page">
+
+        <div class="login-container">
+
+
+            <!-- LEFT SIDE -->
+
+            <section class="login-info">
+
+                <div class="floating-book book-one">
+                    📖
+                </div>
+
+                <div class="floating-book book-two">
+                    📕
+                </div>
+
+                <div class="floating-book book-three">
+                    📗
+                </div>
+
+                <div class="login-icon">
+                    📚
+                </div>
+
+                <span class="eyebrow">
+                    WELCOME BACK
+                </span>
+
+                <h1>
+                    Your next
+                    great read
+                    awaits.
+                </h1>
+
+                <p>
+                    Sign in to your Bookify account
+                    and continue exploring a world
+                    of amazing books.
+                </p>
+
+
+                <div class="quote">
+
+                    <span class="quote-mark">
+                        "
+                    </span>
+
+                    <p>
+                        A room without books is like
+                        a body without a soul.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- RIGHT SIDE -->
+
+            <section class="login-card">
+
+                <div class="form-header">
+
+                    <h2>
+                        Welcome Back
+                    </h2>
+
+                    <p>
+                        Login to continue to Bookify
+                    </p>
+
+                </div>
+
+
+                <!-- MESSAGE -->
+
+                <div id="message"
+                     class="message">
+                </div>
+
+
+                <!-- LOGIN FORM -->
+
+                <form id="loginForm">
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                ✉
+                            </span>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                maxlength="100"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                        <small id="emailError"></small>
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="form-group">
+
+                        <div class="password-label">
+
+                            <label for="password">
+                                Password
+                            </label>
+
+                            <a href="#"
+                               id="forgotPassword">
+                                Forgot password?
+                            </a>
+
+                        </div>
+
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                🔒
+                            </span>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Enter your password"
+                                maxlength="50"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                class="password-toggle"
+                                aria-label="Show password">
+                                👁
+                            </button>
+
+                        </div>
+
+                        <small id="passwordError"></small>
+
+                    </div>
+
+
+                    <!-- REMEMBER ME -->
+
+                    <label class="remember">
+
+                        <input
+                            type="checkbox"
+                            id="remember"
+                        >
+
+                        <span>
+                            Remember me
+                        </span>
+
+                    </label>
+
+
+                    <!-- LOGIN BUTTON -->
+
+                    <button
+                        type="submit"
+                        id="loginButton"
+                        class="login-button">
+
+                        <span id="buttonText">
+                            Login
+                        </span>
+
+                        <span
+                            id="loader"
+                            class="loader">
+                        </span>
+
+                    </button>
+
+                </form>
+
+
+                <!-- REGISTER -->
+
+                <div class="register-link">
+
+                    <span>
+                        Don't have an account?
+                    </span>
+
+                    <a href="register.html">
+                        Create Account
+                    </a>
+
+                </div>
+
+
+                <!-- DIVIDER -->
+
+                <div class="divider">
+                    <span>or</span>
+                </div>
+
+
+                <!-- HOME BUTTON -->
+
+                <a href="index.html"
+                   class="home-button">
+
+                    ← Back to Home
+
+                </a>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Bookify. All Rights Reserved. | By Tanvi Nanaware |  Roll No 44
+        </p>
+
+    </footer>
+
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

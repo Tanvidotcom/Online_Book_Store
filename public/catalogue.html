@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Bookify by Tanvi Nanaware | Catalogue</title>
+
+    <link rel="stylesheet"
+          href="catalogue.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html"
+               class="logo">
+                📚 Bookify by Tanvi Nanaware
+            </a>
+
+            <nav>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="catalogue.html"
+                   class="active">
+                    Catalogue
+                </a>
+
+                <a href="login.html"
+                   id="loginLink">
+                    Login
+                </a>
+
+                <a href="register.html"
+                   id="registerLink">
+                    Register
+                </a>
+
+                <a href="cart.html"
+                   class="cart-link">
+
+                    🛒 Cart
+
+                    <span id="cartCount">
+                        0
+                    </span>
+
+                </a>
+
+                <button
+                    id="logoutButton"
+                    class="logout-button"
+                    style="display:none;">
+                    Logout
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="catalogue-hero">
+
+        <div class="hero-content">
+
+            <span class="eyebrow">
+                BOOKIFY COLLECTION
+            </span>
+
+            <h1>
+                Find Your Next
+                Great Read.
+            </h1>
+
+            <p>
+                Explore our collection of books
+                across different genres and discover
+                something you'll love.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATALOGUE -->
+
+    <main class="catalogue">
+
+        <!-- SEARCH -->
+
+        <div class="catalogue-tools">
+
+            <div class="search-box">
+
+                <span>🔍</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search by title, author or category..."
+                >
+
+            </div>
+
+
+            <select id="categoryFilter">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- RESULT COUNT -->
+
+        <div class="catalogue-heading">
+
+            <div>
+
+                <h2>
+                    Explore Books
+                </h2>
+
+                <p id="resultCount">
+                    Loading books...
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- LOADING -->
+
+        <div id="loading"
+             class="loading">
+
+            <div class="spinner"></div>
+
+            <p>
+                Loading books...
+            </p>
+
+        </div>
+
+
+        <!-- BOOK GRID -->
+
+        <div id="bookGrid"
+             class="book-grid">
+        </div>
+
+
+        <!-- NO RESULTS -->
+
+        <div id="noResults"
+             class="no-results">
+
+            <div>
+                📚
+            </div>
+
+            <h3>
+                No books found
+            </h3>
+
+            <p>
+                Try another search or category.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Bookify. All Rights Reserved.
+            | Developed by TANVI NANAWARE
+        </p>
+
+    </footer>
+
+
+    <script src="catalogue.js"></script>
+
+</body>
+
+</html>
