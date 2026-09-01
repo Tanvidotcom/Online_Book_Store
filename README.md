@@ -349,33 +349,6 @@ http://localhost:3000
                   END
 ```
 
-### API Endpoint Flow
-
-```
-Client Request
-      ↓
-   Express Middleware
-   • Helmet (Security)
-   • Session Management
-   • Input Validation
-   • Rate Limiting (Auth endpoints)
-      ↓
-   Route Handler
-   • Process Request
-   • Validate Input
-   • Query Database
-      ↓
-   Database Operation
-   • Execute SQL Query
-   • Handle Transactions (Orders)
-      ↓
-   Response Preparation
-   • Validate Results
-   • Format JSON
-      ↓
-   Send Response to Client
-```
-
 ### Data Flow in Order Placement
 
 ```
@@ -523,39 +496,44 @@ PORT=3001 npm start
 
 ---
 
-## 📌 Future Enhancement Ideas
+## Screenshots
+### Register Page
+<img width="1917" height="912" alt="image" src="https://github.com/user-attachments/assets/09396550-d952-45e3-b233-bcb3cf2d8d5b" />
 
-- Payment gateway integration (Stripe, PayPal)
-- Email notifications for orders
-- Admin dashboard for book management
-- Book reviews and ratings
-- Advanced filtering and search
-- User profile management
-- Order tracking with real-time updates
-- Wishlist functionality
-- Promotional codes/coupons
-- Multiple payment methods
-- Inventory management
+
+### Login Page:
+<img width="1917" height="912" alt="image" src="https://github.com/user-attachments/assets/7dca1531-98e4-40db-8f7f-d8e39ec4e93b" />
+
+
+### Home Page:
+<img width="1917" height="912" alt="image" src="https://github.com/user-attachments/assets/e32e522c-a498-4b0d-b93f-c501bd010839" />
+<img width="1917" height="905" alt="image" src="https://github.com/user-attachments/assets/b91b18b4-17be-444a-96b4-7af2638024da" />
+<img width="1917" height="911" alt="image" src="https://github.com/user-attachments/assets/5bf6f5ac-fa4f-4a82-8c65-85a516768558" />
+<img width="1917" height="911" alt="image" src="https://github.com/user-attachments/assets/6b8a3556-a818-4c1a-82b5-a9b1c3406b48" />
+<img width="1917" height="907" alt="image" src="https://github.com/user-attachments/assets/ff4ece9e-cf29-416a-8b70-2dfc697c533f" />
+
+
+### Catalogue Page:
+<img width="1917" height="912" alt="image" src="https://github.com/user-attachments/assets/7e1b9754-1319-496b-8e74-f9643aa8dcfc" />
+<img width="1917" height="906" alt="image" src="https://github.com/user-attachments/assets/733084eb-9163-4e73-b0fd-31a3e75da3c9" />
+
+
+### Add to Cart:
+<img width="1897" height="910" alt="image" src="https://github.com/user-attachments/assets/05e7cebe-d825-4433-bb9a-b755d4f9e254" />
+<img width="1917" height="907" alt="image" src="https://github.com/user-attachments/assets/df1faeb3-dae4-4e71-8b75-7612fbe47077" />
+
+
+### Buy Now:
+<img width="1917" height="906" alt="image" src="https://github.com/user-attachments/assets/0afc6ddf-ddd9-489a-98e4-5c679bc38947" />
+
+
 
 ---
 
-## 📄 License
-
-ISC License
 
 ---
 
 ## 👤 Author
-
-[Your Name/Organization]
-
----
-
-## 📞 Support
-
-For issues or questions, please create an issue or contact the development team.
-
----
-
-**Last Updated**: 2024  
-**Version**: 1.0.0
+Tanvi Nanaware
+TY CS-H
+Roll No. 44
